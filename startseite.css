@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 body{
     color: white;
     padding: 0;
@@ -13,27 +14,62 @@ body{
     max-height: 20px ;
 }
 .header {
-    max-height: 60px;
-    align-content: stretch ;
-    justify-content: space-between;
-    flex-direction: row;
-    display: flex;
-    backdrop-filter: blur(0.1);
-    border-radius: 8px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
+    z-index: 1;
 }
-.list{
 
-    list-style: none;
+nav {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
 }
-.list li{
+
+.logo img {
+    max-height: 20px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.menu a {
     padding: 10px;
-}
-.list li a{
-    color: white;
+    list-style: none;
     text-decoration: none;
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.2s all ease-in-out;
+    color: #fff;
 }
+
+.menu:hover a {
+    opacity: 0.4;
+}
+
+.menu a:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+.menu-icon {
+    display: none;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked ~ .menu {
+    transform: scale(1, 1);
+}
+
 .titleArea{
     display: flex;
     justify-content: left;
@@ -48,10 +84,10 @@ body{
     display: flex;
     justify-content: right;
     margin-right: 50px;
-    margin-top: 60px;
     transition: ease-in-out 1s;
 }
 .ferrariText{
+    font-family: "Ubuntu", sans-serif;
     padding: 20px;
     max-width: 450px;
 }
@@ -78,4 +114,70 @@ body{
 .instagramm{
     color: white;
     padding: 10px;
+}
+.linkedIn{
+    color: white;
+    padding: 10px;
+}
+.madeBy {
+    margin-right: 10px;
+}
+@media only screen and (max-width: 950px) {
+    .menu {
+        flex-direction: column;
+        align-items: start;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 0.3s ease-in-out;
+        background-color: rgba(0, 0, 0, 0.55);
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        border-radius: 4px;
+    }
+
+    .menu a {
+        margin-left: 12px;
+    }
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+        color: #fff;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .titleArea{
+        justify-content: center;
+        padding: 10px;
+    }
+    .titleText{
+        font-size: 40px;
+    }
+    .essayTextArea{
+        justify-content: center;
+        margin: 0;
+        max-width: 400px;
+    }
+    .outlook{
+        padding: 5px;
+    }
+    .instagramm{
+        padding: 5px;
+    }
+    .linkedIn{
+        padding: 5px;
+    }
+    .copyrightText{
+        font-size: 10px;
+    }
+    .madeByText{
+        font-size: 10px;
+    }
 }
