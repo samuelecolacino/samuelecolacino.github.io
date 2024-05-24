@@ -102,8 +102,8 @@ nav {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 5px 0;
     text-align: center;
+    align-items: center;
 }
 .sociallinks{
     display: flex;
@@ -177,6 +177,7 @@ nav {
     }
     .essayTextArea{
         justify-content: center;
+        margin: 0;
     }
     .ferrariText{
         margin:0;
@@ -199,5 +200,11 @@ nav {
     }
     .madeByText{
         font-size: 10px;
+    }
+}
+@media only screen and (max-width: 799px) {
+    body {
+        transition: ease-in-out 3s;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.34)), url("../img/488_Handy.jpg");
     }
 }
