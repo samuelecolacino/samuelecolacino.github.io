@@ -4,10 +4,12 @@ body{
     color: white;
     padding: 0;
     margin: 0;
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.14)), url("./img/background-index.jpg");
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.34)), url("img/background-index.jpg");
     background-position: center;
     background-size: cover;
+    overflow: hidden;
     height: 100vh;
+    transition: transform 0.3s ease;
 }
 .logo{
     margin:10px;
@@ -100,8 +102,8 @@ nav {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 5px 0;
     text-align: center;
+    align-items: center;
 }
 .sociallinks{
     display: flex;
@@ -122,7 +124,24 @@ nav {
 .madeBy {
     margin-right: 10px;
 }
-@media only screen and (max-width: 950px) {
+.info {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+.hp{
+    margin: 10px;
+}
+.speed{
+    margin: 10px;
+}
+.kw{
+    margin: 10px;
+}
+@media only screen and (max-width: 1085px) {
+    body{
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.34)), url("../img/F40_Handy.jpg");
+    }
     .menu {
         flex-direction: column;
         align-items: start;
@@ -155,15 +174,20 @@ nav {
     }
     .titleArea{
         justify-content: center;
-        padding: 10px;
     }
     .titleText{
-        font-size: 40px;
+        font-size: 30px;
     }
     .essayTextArea{
         justify-content: center;
         margin: 0;
-        max-width: 400px;
+    }
+    .ferrariText{
+        margin:0;
+    }
+    .info{
+        display: flex;
+        justify-content: center;
     }
     .outlook{
         padding: 5px;
