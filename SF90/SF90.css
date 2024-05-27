@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    color: white;
+    padding: 0;
+    margin: 0;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.34)), url("../img/SF90.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    transition: transform 0.3s ease;
+}
+.logo{
+    margin:10px;
+    max-height: 20px ;
+}
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.logo img {
+    max-height: 20px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.menu a {
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.2s all ease-in-out;
+    color: #fff;
+}
+
+.menu:hover a {
+    opacity: 0.4;
+}
+
+.menu a:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+.menu-icon {
+    display: none;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked ~ .menu {
+    transform: scale(1, 1);
+}
+
+.titleArea{
+    display: flex;
+    justify-content: left;
+    margin: 100px;
+    transition: ease-in-out 1s;
+}
+.titleText{
+    font-size: 170px;
+    font-family: "Ubuntu", sans-serif;
+}
+.essayTextArea {
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+    transition: ease-in-out 1s;
+}
+.ferrariText{
+    font-family: "Ubuntu", sans-serif;
+    padding: 20px;
+    max-width: 450px;
+    max-height: 122px;
+    font-size: 13px;
+}
+.footer{
+    transition: ease-in-out 1s;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+.sociallinks{
+    display: flex;
+    flex-direction: row;
+}
+.outlook{
+    color: white;
+    padding: 10px;
+}
+.instagramm{
+    color: white;
+    padding: 10px;
+}
+.linkedIn{
+    color: white;
+    padding: 10px;
+}
+.madeBy {
+    margin-right: 10px;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+.hp{
+    margin: 10px;
+}
+.speed{
+    margin: 10px;
+}
+.kw{
+    margin: 10px;
+}
+@media only screen and (max-width: 1085px) {
+    .menu {
+        flex-direction: column;
+        align-items: start;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 0.3s ease-in-out;
+        background-color: rgba(0, 0, 0, 0.55);
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        border-radius: 4px;
+    }
+
+    .menu a {
+        margin-left: 12px;
+    }
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+        color: #fff;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .titleArea{
+        justify-content: center;
+    }
+    .titleText{
+        font-size: 30px;
+    }
+    .essayTextArea{
+        justify-content: center;
+        margin: 0;
+    }
+    .ferrariText{
+        max-height: 273px;
+        margin:0;
+    }
+    .info{
+        display: flex;
+        justify-content: center;
+    }
+    .outlook{
+        padding: 5px;
+    }
+    .instagramm{
+        padding: 5px;
+    }
+    .linkedIn{
+        padding: 5px;
+    }
+    .copyrightText{
+        font-size: 10px;
+    }
+    .madeByText{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 799px) {
+    body {
+        transition: ease-in-out 3s;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.34)), url("../img/SF90_Handy.jpg");
+    }
+}
+@media  (max-width: 375px){
+    .titleArea{
+        margin: 50px;
+    }
+    .essayTextArea{
+        margin-top: 0;
+        max-width: 350px;
+    }
+    .ferrariText{
+        margin:0;
+        font-size: 10px;
+        max-height: 300px;
+    }
+}
