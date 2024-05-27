@@ -92,6 +92,9 @@ nav {
     font-family: "Ubuntu", sans-serif;
     padding: 20px;
     max-width: 450px;
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 125px;
 }
 .footer{
     transition: ease-in-out 1s;
@@ -181,6 +184,7 @@ nav {
     .essayTextArea{
         justify-content: center;
         margin: 0;
+
     }
     .ferrariText{
         font-size: 13px;
