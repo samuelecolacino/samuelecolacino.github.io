@@ -138,7 +138,7 @@ nav {
 .kw{
     margin: 10px;
 }
-@media only screen and (max-width: 1085px) {
+@media (max-width: 1085px) {
     body{
         background-image:  linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.34)), url("img/index-Handy.jpg");
     }
