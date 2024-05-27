@@ -206,6 +206,20 @@ nav {
         font-size: 10px;
     }
 }
+@media  (max-width: 757px){
+    .titleArea{
+        margin: 50px;
+    }
+    .essayTextArea{
+        margin-top: 0;
+        max-width: 350px;
+    }
+    .ferrariText{
+        margin:0;
+        font-size: 10px;
+        max-height: 300px;
+    }
+}
 @media  (max-width: 375px){
     .titleArea{
         margin: 50px;
