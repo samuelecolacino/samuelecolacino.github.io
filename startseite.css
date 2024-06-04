@@ -141,7 +141,13 @@ nav {
 .kw{
     margin: 10px;
 }
+@media (max-width: 1300px){
+    .titleArea{
+        margin:0;
+    }
+}
 @media (max-width: 1085px) {
+
     body{
         background-image:  linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.34)), url("img/index-Handy.jpg");
     }
@@ -217,10 +223,11 @@ nav {
     .essayTextArea{
         margin-top: 0;
         max-width: 350px;
+        display: contents;
     }
     .ferrariText{
         margin:0;
-        font-size: 10px;
+        font-size: 13px;
         max-height: 300px;
     }
 }

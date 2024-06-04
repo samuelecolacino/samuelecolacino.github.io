@@ -140,6 +140,11 @@ nav {
 .kw{
     margin: 10px;
 }
+@media (max-width: 1360px){
+    .titleArea{
+        margin:0;
+    }
+}
 @media only screen and (max-width: 1085px) {
     .menu {
         flex-direction: column;
@@ -183,7 +188,7 @@ nav {
     }
     .ferrariText{
         max-height: 273px;
-        margin:0;
+        margin: 50px 0 0;
     }
     .info{
         display: flex;
