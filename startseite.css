@@ -94,7 +94,8 @@ nav {
     max-width: 450px;
     overflow: hidden;
     overflow-y: scroll;
-    max-height: 125px;
+    max-height: 132px;
+    scrollbar-width: thin;
 }
 .footer{
     transition: ease-in-out 1s;
