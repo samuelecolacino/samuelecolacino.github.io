@@ -1,63 +1,343 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
     <meta charset="UTF-8">
-    <title>Ferrari</title>
-    <link rel="shortcut icon" href="Favicon.ico">
-    <link rel="stylesheet" href="startseite.css">
-    <script src="https://kit.fontawesome.com/3e3300dc41.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ihr Coiffeur und Kosmetikstudio in Rütihof. Seit über 40 Jahren Ihr Ansprechpartner für Haut & Haar.">
+    <meta name="keywords"
+        content="Coiffeur, Kosmetik, Rütihof, Friseur, Haare, Wirth, Anita Suter, Susi Pajarola, Gesichtsbehandlung">
+    <title>Coiffure Kosmetik Wirth - Rüetihof</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
 </head>
-<body>
-<header class="header">
-    <nav>
-        <div class="logo">
-            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
-        </div>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        <ul class="menu">
-            <li><a href="index.html">Start</a></li>
-            <li><a href="488-Spyder/488.html">488 Spyder</a></li>
-            <li><a href="Ferrari-Dino/Dino.html">Ferrari Dino</a></li>
-            <li><a href="F40/F40.html">F40</a></li>
-            <li><a href="SF90/SF90.html">SF90 Stradale</a></li>
-        </ul>
-    </nav>
-</header>
-<div class="nav-bg"></div>
 
-<div class="main">
-    <div class="titleArea">
-        <label class="titleText">Ferrari</label>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Coiffure <span>Wirth</span></a>
+            <ul class="nav-menu">
+                <li><a href="#home">Willkommen</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#services">Leistungen</a></li>
+                <li><a href="#products">Produkte</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="greeting-container">
+        <div class="greeting"></div>
     </div>
-</div>
-<div>
-    <div class="essayTextArea">
-        <p class="ferrariText">
-            Ferrari wurde 1939 von Enzo Ferrari in Maranello, Italien, gegründet und ist eine Legende des Automobilbaus.
-            Das berühmte Logo, ein springendes Pferd auf gelbem Grund, symbolisiert Kraft und Eleganz.
-            Die Marke hat zahlreiche Erfolge im Motorsport errungen, darunter viele Formel-1-Weltmeisterschaften.
-            Von Klassikern wie dem Ferrari 250 GTO bis hin zum modernen LaFerrari verkörpern die Modelle Stil und Leistung.
-            Die Fahrzeuge von Ferrari stehen für Geschwindigkeit, Leistung und unverkennbares Design.
-            Mehr als nur Autos, sind sie Ausdruck einer Leidenschaft und eines Lebensstils.
-            Der Ferrari Club bietet Enthusiasten exklusive Veranstaltungen und Zugang zu einer einzigartigen Gemeinschaft.
-            In jeder Kurve der Straße und auf jeder Rennstrecke bleibt die Legende von Ferrari lebendig und unvergessen.
+
+    <section id="home" class="hero">
+        <h1>Herzlich Willkommen bei<br><span>Coiffure Kosmetik Wirth</span></h1>
+        <p>mit langjähriger Erfahrung sind wir seit über 40 Jahren ihr Ansprechpartner für Haut & Haar</p>
+        <p class="motto">Familiär, klein aber fein und für alle da!</p>
+        <a href="tel:0564934530" class="cta-button">☎ 056 493 45 30</a>
+    </section>
+
+    <div class="carousel-section">
+        <div class="carousel-track">
+            <div class="carousel-item">
+                <img src="img/bild-vom-stuhl-hinden.jpeg" alt="Salon Produkte">
+            </div>
+            <div class="carousel-item">
+                <img src="img/bild-voneinzeldem-stuhl.jpeg" alt="Salon Wartebereich">
+            </div>
+            <div class="carousel-item">
+                <img src="img/bilder-produkte.jpeg" alt="Salon Arbeitsplätze">
+            </div>
+            <div class="carousel-item">
+                <img src="img/coiffuresalon-full.jpeg" alt="Salon Kosmetik">
+            </div>
+            <div class="carousel-item">
+                <img src="img/tucher-in-mitte-von-spiegel.jpeg" alt="Salon Details">
+            </div>
+            <div class="carousel-item">
+                <img src="img/waschbecken.png" alt="Salon Spiegel">
+            </div>
+            <div class="carousel-item">
+                <img src="img/anita-susanne.jpeg" alt="Unser Team">
+            </div>
+            <div class="carousel-item">
+                <img src="img/bild-vom-stuhl-hinden.jpeg" alt="Salon Produkte">
+            </div>
+            <div class="carousel-item">
+                <img src="img/bild-voneinzeldem-stuhl.jpeg" alt="Salon Wartebereich">
+            </div>
+            <div class="carousel-item">
+                <img src="img/bilder-produkte.jpeg" alt="Salon Arbeitsplätze">
+            </div>
+            <div class="carousel-item">
+                <img src="img/coiffuresalon-full.jpeg" alt="Salon Kosmetik">
+            </div>
+            <div class="carousel-item">
+                <img src="img/tucher-in-mitte-von-spiegel.jpeg" alt="Salon Details">
+            </div>
+            <div class="carousel-item">
+                <img src="img/waschbecken.png" alt="Salon Spiegel">
+            </div>
+            <div class="carousel-item">
+                <img src="img/anita-susanne.jpeg" alt="Unser Team">
+            </div>
+        </div>
+    </div>
+
+    <section id="team">
+        <div class="container">
+            <h2 class="section-title">Unser Team</h2>
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="img/anita-susanne.jpeg" alt="Unser Team">
+                </div>
+                <div class="team-info">
+                    <h3>Susi Pajarola & Anita Suter</h3>
+                    <div class="team-member">
+                        <div class="team-member-name">Susi Pajarola</div>
+                        <div class="team-member-role">Damen-/Herren Coiffeuse</div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member-name">Anita Suter</div>
+                        <div class="team-member-role">Damen-/Herren Coiffeuse · Kosmetik</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Leistungen & Preise</h2>
+
+            <div class="toggle-container">
+                <div class="toggle-switch">
+                    <input type="radio" id="toggle-coiffeur" name="price-toggle" value="coiffeur" checked>
+                    <label for="toggle-coiffeur">Coiffeur</label>
+
+                    <input type="radio" id="toggle-kosmetik" name="price-toggle" value="kosmetik">
+                    <label for="toggle-kosmetik">Kosmetik</label>
+
+                    <div class="toggle-slider"></div>
+                </div>
+            </div>
+
+            <div class="price-grid">
+                <div class="price-category">
+                    <h3>Kosmetik</h3>
+                    <div class="price-item">
+                        <span class="price-name">Gesichtsreinigung 60 min</span>
+                        <span class="price-value">65 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Gesichtsbehandlung 90 min</span>
+                        <span class="price-value">110 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Mikrodermabrasion 110 min</span>
+                        <span class="price-value">130 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Wimpern färben</span>
+                        <span class="price-value">25 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Brauen färben</span>
+                        <span class="price-value">25 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Kombi Wimpern & Brauen färben</span>
+                        <span class="price-value">30 CHF</span>
+                    </div>
+                </div>
+
+                <div class="price-category">
+                    <h3>Haarentfernung mit Wachs</h3>
+                    <div class="price-item">
+                        <span class="price-name">Gesichtshaare</span>
+                        <span class="price-value">ab 20 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Achseln</span>
+                        <span class="price-value">ab 25 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Arme</span>
+                        <span class="price-value">ab 35 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Halbe Beine</span>
+                        <span class="price-value">ab 40 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Ganze Beine</span>
+                        <span class="price-value">ab 80 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Rücken</span>
+                        <span class="price-value">ab 65 CHF</span>
+                    </div>
+                </div>
+
+                <div class="price-category">
+                    <h3>Manicure & Fusspflege</h3>
+                    <div class="price-item">
+                        <span class="price-name">Manicure ohne Lack</span>
+                        <span class="price-value">35 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Manicure mit Lack</span>
+                        <span class="price-value">40 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Fusspflege ohne Lack</span>
+                        <span class="price-value">55 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Fusspflege mit Lack</span>
+                        <span class="price-value">65 CHF</span>
+                    </div>
+                </div>
+
+                <div class="price-category">
+                    <h3>Massage</h3>
+                    <div class="price-item">
+                        <span class="price-name">Rückenmassage 40 min</span>
+                        <span class="price-value">60 CHF</span>
+                    </div>
+                </div>
+
+                <div class="price-category">
+                    <h3>Coiffeur Damen</h3>
+                    <div class="price-item">
+                        <span class="price-name">Waschen Föhnen</span>
+                        <span class="price-value">36 – 45 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Waves / Locken / Strecken</span>
+                        <span class="price-value">+10 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Waschen Schneiden Föhnen</span>
+                        <span class="price-value">66 – 75 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Ansatzfärben oder Tönen / Waschen / Föhnen</span>
+                        <span class="price-value">95 – 105 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Ansatzfärben oder Tönen / Waschen / Schneiden / Föhnen</span>
+                        <span class="price-value">110 – 120 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Farbe oder Tönung bis in die Spitzen</span>
+                        <span class="price-value">+20 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Strähnchen / Highlights / Waschen / Schneiden / Föhnen</span>
+                        <span class="price-value">ab 130 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Dauerwelle / Schneiden / Föhnen</span>
+                        <span class="price-value">ab 130 CHF</span>
+                    </div>
+                </div>
+
+                <div class="price-category">
+                    <h3>Coiffeur Herren & Kinder</h3>
+                    <div class="price-item">
+                        <span class="price-name">Maschinenschnitt</span>
+                        <span class="price-value">17 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Schneiden / Föhnen</span>
+                        <span class="price-value">31 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Waschen / Schneiden / Föhnen</span>
+                        <span class="price-value">35 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Kinder bis 12 Jahre</span>
+                        <span class="price-value">26 CHF</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-name">Kinder bis 16 Jahre</span>
+                        <span class="price-value">35 CHF</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <h2 class="section-title">Unsere Produkte</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="img/goldwell.png" alt="Goldwell" class="goldwell">
+                    <p>Hochwertige Haarpflegeprodukte für professionelle Ergebnisse</p>
+                </div>
+                <div class="product-card">
+                    <img src="img/wella.png" alt="Wella" class="wella">
+                    <p>Premium Haarpflege und Styling für jeden Haartyp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Anfahrt & Kontakt</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>📍 Kontaktinformationen</h3>
+                    <div class="info-item">
+                        <strong>Adresse:</strong><br>
+                        Hofstrasse 20<br>
+                        5406 Rütihof
+                    </div>
+                    <div class="info-item">
+                        <strong>Telefon:</strong><br>
+                        <a href="tel:0564934530" style="color: var(--gold); text-decoration: none;">056 493 45 30</a>
+                    </div>
+                    <div class="info-item">
+                        <strong>Öffnungszeiten:</strong><br>
+                        Di–Fr 7:00 – 18:30<br>
+                        Sa 7:00
+                    </div>
+                    <div class="info-item">
+                        <strong>Anfahrt:</strong><br>
+                        Auto: gratis Parkplatz<br>
+                        Bus
+                    </div>
+                    <div class="info-item">
+                        <strong>Bezahlung:</strong><br>
+                        Bar & Twint
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2698.7348284753643!2d8.321736!3d47.449167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47906d1e8f8f8f8f%3A0x8f8f8f8f8f8f8f8f!2sHofstrasse%2020%2C%205406%20R%C3%BCtihof!5e0!3m2!1sde!2sch!4v1234567890"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Coiffure Kosmetik Wirth | Hofstrasse 20, 5406 Rütihof</p>
+        <p>Telefon: 056 493 45 30</p>
+        <p class="legal-links">
+            <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a>
         </p>
-    </div>
-</div>
-<footer class="footer">
-    <div class="sociallinks">
-        <a href="mailto:S.Colacino.inf23@stud-bbbaden.ch" class="outlook"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://www.instagram.com/samuele.colacino/" class="instagramm"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/samuele-colacino-b8535329b/" class="linkedIn"><i class="fa-brands fa-linkedin"></i></a>
-    </div>
-    <div class="copyright">
-        <p class="copyrightText">©samuelecolacino alle rechte vorbehalten</p>
-    </div>
-    <div class="madeBy">
-        <p class="madeByText"> Made By Samuele Colacino</p>
-    </div>
-</footer>
+    </footer>
 </body>
+
 </html>
